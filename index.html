@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" -->
+</head>
+<style>
+  #ia{
+    position: relative;
+   top: 80px;
+   left: 320px;
+  }
+#ib{
+  position: relative;
+   top: 90px;
+   left: 320px;
+
+}
+#ic{
+   position: relative;
+   top: 100px;
+   left: 320px;
+}
+#ie{
+  position: relative;
+  top: 100px;
+  left: 320px;
+}
+#if{
+  position: relative;
+  top: 100px;
+  left: 340px;
+}
+#im{
+  position: relative;
+  top: 160px;
+  left: 310px;
+}
+#in{
+  position: relative;
+  top: 160px;
+  left: 310px;
+}
+#it{
+  position: relative;
+  top: 180px;
+  left: 550px;
+}
+#iz{
+  position: relative;
+  top: 150px;
+  left: 50px;
+}
+body {
+  background-color: lightblue;
+}
+#ix{
+  position: relative;
+  top: 200px;
+  left: 10px;
+
+}
+</style>
+<body>
+  <script src="./script1.js"></script>
+  <nav class="navbar fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#">Registration Form</a>
+  </nav>
+    <form>
+      <div id="ia" class="form-group col-md-6">
+        <label for="inputEmail4">First Name</label>
+        <input type="email" class="form-control" onclick = "fun()"; id="firstname" placeholder="First Name">
+      </div>
+      <div id="ib" class="form-group col-md-6">
+        <label for="inputEmail4">Last Name</label>
+        <input type="email" class="form-control" onclick = "run()"; id="lastname" placeholder="Last Name">
+      </div>
+        <div id="ic" class="form-group col-md-6">
+          <label for="inputEmail4">Address</label>
+          <input type="email" class="form-control" onclick = "mun()"; id="address" placeholder="Address">
+        </div>
+        <div id="ie" class="form-group col-md-2">
+            <label for="inputZip">Pincode</label>
+            <input type="text" class="form-control" onclick = "tun()"; id="pincode">
+          </div>
+          <div id="if" class="form-check form-check-inline">
+            <label for="inputAddress">Select Gender</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" value="male" id="male">
+              <label class="form-check-label" for="male">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" value="female" id="female">
+              <label class="form-check-label" for="female">
+                Female
+              </label>
+            </div>
+          </div>
+        </div>
+            <div id="iz" class="form-check form-check-inline" onclick = "en()";>
+            <label for="inputAddress" >Food items</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Idly" name="foodItems">
+              <label class="form-check-label" for="defaultCheck1">
+                Idly
+              </label>
+              <input class="form-check-input" type="checkbox" value="Dosa" name="foodItems">
+              <label class="form-check-label" for="defaultCheck1">
+                Dosa
+              </label>
+              <input class="form-check-input" type="checkbox" value="Upma" name="foodItems">
+              <label class="form-check-label" for="defaultCheck1">
+                Upma
+              </label>
+              <input class="form-check-input" type="checkbox" value="Puri" name="foodItems">
+              <label class="form-check-label" for="defaultCheck1">
+                Puri
+              </label>
+              <input class="form-check-input" type="checkbox" value="Pongal" name="foodItems">
+              <label class="form-check-label" for="defaultCheck1">
+                Pongal
+              </label>
+            </div>
+        </div>
+        <div id="im" class="form-group col-md-2">
+            <label for="state">State</label>
+            <input type="text" onclick="man()"; class="form-control" id="state">
+          </div>
+          <div id="in" class="form-group col-md-2">
+            <label for="country">Country</label>
+            <input type="text" onclick="van()"; class="form-control" id="country">
+          </div>
+      </div>
+      <div id="it" class="form-group col-md-2">
+      <button type="submit" button onclick="myFunction()"; class="btn btn-primary">Submit</button>
+      <input class="btn btn-primary" id="reset" type="reset" value="Reset">
+        
+  <br>
+    </div>
+      </form>
+      <div>
+      <table id="ix" class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Pincode</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Food items</th>
+            <th scope="col">State</th>
+            <th scope="col">Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="tr">
+            <th scope="row">1</th>
+            <td id="td1"></td>
+            <td id="td2"></td>
+            <td id="td3"></td>
+            <td id="td4"></td>
+            <td id="td5"></td>
+            <td id="td6"></td>
+            <td id="td7"></td>
+            <td id="td8"></td>
+          </tr>
+          </tbody>
+          </table>
+
+        </div>
+</body>
+</html>
